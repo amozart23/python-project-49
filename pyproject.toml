@@ -4,11 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Амадей Базылбеков <mozart23@yandex.ru>"]
 readme = "README.md"
-packages = [{include = "hexlet_code"}, {include = "brain_games"}]
+packages = [{include = "brain_games"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
 
+[tool.poetry.scripts]
+brain-games = "brain_games.scripts.brain_games:main"
 
 [build-system]
 requires = ["poetry-core"]
